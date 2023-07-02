@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-one: hsl(211, 68%, 94%);
+    --light-grayish-blue-two: hsl(205, 33%, 90%, 50%);
+    --grayish-blue:  hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+
+    --body-fs: 14px;
+
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: var(--dark-grayish-blue);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: var(--body-fs);
+}
+
+b {
+    color: black;
+    font-weight: 800;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.card {
+    height: 100vh;
+    width: 100%;
+    padding: 0rem 1rem;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .notification {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header .notification .amount {
+    width: 1.8rem;
+    height: 1.3rem;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: var(--body-fs);
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.header .notification h3 {
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.header p:hover {
+    cursor: pointer;
+    color: purple;
+}
+
+.comments-container {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comments-container > * {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    padding: 0.8rem 0;
+}
+
+.comments-container > *:nth-child(-n+3) { 
+    background: var(--light-grayish-blue-two);
+}
+
+.comments-container #reaction {
+    color: var(--dark-grayish-blue);
+    font-weight: 800;
+}
+
+.comments-container #reaction:hover {
+    cursor: pointer;
+    color: purple;
+}
+
+
+.comments-container .text-content #red-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+}
+
+.comments-container img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.comments-container .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 8px;
+}
+
+.text-content .live {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.text-content div #red-dot {
+    margin-top: .2rem;
+}
+
+#joined-group {
+    color: var(--very-dark-blue);
+    font-weight: 800;
+}
+
+#change-group {
+    color: purple;
+    font-weight: 800;
+}
+
+#change-group:hover {
+    cursor: pointer;
+}
+
+#followed:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+.read-private-message {
+    margin-top: 1rem;
+    border: 1px solid var(--light-grayish-blue-one);
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 90%;
+}
+
+.read-private-message:hover {
+    background: var(--light-grayish-blue-one);
+    cursor: pointer;
+}
+
+#embedded-picture {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 950px){
+    body {
+        background: var(--light-grayish-blue-two);
+    }
+
+    .container {
+        padding: 5rem;
+    }
+    
+    .card {
+        max-width: 50%;
+        border-radius: 8px;
+        margin: auto;
+        background: var(--white);
+        padding: 1rem 2rem;
+    }
+
+    #picture-embed {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+

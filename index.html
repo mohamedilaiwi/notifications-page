@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <section class="header">
+        <div class="notification">
+          <h3>Notifications</h3>
+          <div class="amount">3</div>
+        </div>
+        <p>Mark all as read</p>
+      </section>
+  
+      <div class="comments-container">
+        <div class="comment-one">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="">
+          <div class="text-content">
+            <div class="live">
+              <p id="text-comment"><b>Mark Webber</b> reacted to your recent post <span id="reaction">My first tournament today!</span></p>
+              <div id="red-dot"></div>
+            </div>
+            <p id="time-posted">1m ago</p>
+          </div>
+        </div>
+  
+        <div class="comment-two">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="">
+          <div class="text-content">
+            <div class="live">
+              <p id="text-comment"><b id="followed">Angela Gray</b> followed you</p>
+              <div id="red-dot"></div>
+            </div>
+            <p id="time-posted">5m ago</p>
+          </div>
+        </div>
+  
+        <div class="comment-three">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+          <div class="text-content">
+            <div class="live">
+              <p id="text-comment"><b>Jacob Thompson</b> has joined your group <span id="change-group">Chess Club</span></p>
+              <div id="red-dot"></div>
+            </div>
+            <p id="time-posted">1 day ago</p>
+
+          </div>
+        </div>
+  
+        <div class="comment-four">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          <div class="text-content">
+            <p id="text-comment"><b>Rizky Hasanuddin</b> sent you a private message </p>
+            <p id="time-posted">5 days ago</p>
+            <div class="read-private-message">
+              <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                I'm already having lots of fun and improving my game.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="comment-five">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+          <div class="text-content" id="picture-embed">
+            <div>
+              <p id="text-comment"><b>Kimberly Smith</b> commented on your picture</p>
+              <p id="time-posted">1 week ago</p>
+            </div>
+            <div>
+              <img src="./assets/images/image-chess.webp" id="embedded-picture">
+            </div>
+          </div>
+        </div>
+  
+        <div class="comment-six">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+          <div class="text-content">
+            <p id="text-comment"><b>Nathan Peterson</b> reacted to your recent post <span id="reaction">5 end-game strategies to increase your win rate</span></p>
+            <p id="time-posted">2 weeks ago</p>
+          </div>
+        </div>
+  
+        <div class="comment-seven">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="">
+          <div class="text-content">
+            <p id="text-comment"><b>Anna Kimg</b> left the group <span id="change-group">Chess Club</span></p>
+            <p id="time-posted">2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</body>
+</html>
